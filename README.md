@@ -24,7 +24,7 @@ Taxa C (valor da transferencia maior que 2000€)
 Testes unitários não são obrigatórios, mas são bem-vindos.
 
 # Testing instructions
-1- Clone the repo and open in intellij idea
+1- Switch to the CRUD_methods branch from the repo, Clone the repo and open in intellij idea.
 
 2- Certify that MySQL and MySQL Workbench is installed. Go to MySQL Workbench and add a new databse with the name 'banking_app' , as is defined in the application.properties file
 
