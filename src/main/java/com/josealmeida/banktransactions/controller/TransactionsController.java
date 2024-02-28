@@ -16,10 +16,6 @@ public class TransactionsController {
     @Autowired
     private TransactionService transactionService;
 
-//    @PostMapping
-//    public Transaction createAccount(@RequestBody TransactionRequest transactionRequest) {
-//        return transactionService.createTransaction(transactionRequest);
-//    }
 
     @PostMapping
     public ResponseEntity<?> createTransaction(@RequestBody TransactionRequest transactionRequest) {

@@ -112,9 +112,11 @@ public class TransactionService {
             } else if (daysDifference >= 31 && daysDifference <= 40) {
                 fee = amount.multiply(BigDecimal.valueOf(0.047));
                 amountMinusFee = amount.subtract(fee);
-            } else {
+            } else if(daysDifference > 40){
                 fee = amount.multiply(BigDecimal.valueOf(0.017));
                 amountMinusFee = amount.subtract(fee);
+            } else {
+                throw new RuntimeException("For transactions above 2000, scheduling date must start after 11 days of today's date!");
             }
         }
 
